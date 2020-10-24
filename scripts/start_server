@@ -1,5 +1,12 @@
 #!/bin/bash
-cd /home/ec2-user/node-website
-export NODE_ENV=production
-forever start app.js
-service httpd start
+# cd /home/ec2-user/node-website
+# export NODE_ENV=production
+# forever start app.js
+# service httpd start
+
+cd /home/ec2-user/awscodestar
+npm start
+pm2 start npm --name "awscodestar" --start
+pm2 startup
+pm2 save
+pm2 restart all
