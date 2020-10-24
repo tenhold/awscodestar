@@ -1,6 +1,6 @@
 import React from 'react';
 
-const names = ['jon', 'larry', 'bri', 'chris'];
+const names = ['jon', 'larry', 'bri', 'chris', 'new name'];
 
 
 const Names = () => {
